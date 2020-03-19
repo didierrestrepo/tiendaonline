@@ -1,0 +1,11 @@
+version: '2'
+services:
+  tiendaonline-postgresql:
+    image: postgres:12.1
+    # volumes:
+    #     - ~/volumes/jhipster/tiendaonline/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=tiendaonline
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
